@@ -37,6 +37,8 @@ services:
       - ./data/vnstat/:/var/lib/vnstat/
     labels:
       - "com.centurylinklabs.watchtower.enable=true"
+    ports:
+      - "80:80"
 
   flower:
     image: bennythink/ytdlbot
