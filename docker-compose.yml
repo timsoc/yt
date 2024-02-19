@@ -29,7 +29,7 @@ services:
     image: bennythink/ytdlbot
     env_file:
       - env/ytdl.env
-    restart: always
+    restart: on-failure
     volumes:
       - ./data/vnstat/:/var/lib/vnstat/
     labels:
